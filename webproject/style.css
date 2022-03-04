@@ -1,0 +1,210 @@
+/* This is the comment for my CSS */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Amatic+SC:wght@700&family=Brygada+1918:ital@1&family=Gentium+Basic&family=Kanit:ital,wght@1,300&family=Marck+Script&family=Nanum+Pen+Script&family=Rock+Salt&family=Sorts+Mill+Goudy:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Amaranth', sans-serif;
+    color: #014d4e;
+    /* font-family: 'Amatic SC', cursive;
+    font-family: 'Brygada 1918', serif;
+    font-family: 'Gentium Basic', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Rock Salt', cursive;
+    font-family: 'Sorts Mill Goudy', serif; */
+}
+body {
+  background-image: url('Images/111.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#menu{
+    background-color:  #014d4e;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+    margin-bottom: 20px;
+    justify-content:space-evenly;
+    position: fixed;
+    top: 0px;
+
+    /* border: #eb3204 solid; */
+}
+#menu a{
+    color: #c2b280;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+#menu a:hover{
+    color: #eb3204;
+    font-size: 30px;
+}
+/* .sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #014d4e;
+    max-width:10px;
+    height: auto;
+    padding: 10%;
+    margin-top: none;
+    border-top:none;
+    border-left: #eb3204 solid;
+    border-right: #eb3204 solid;
+} */
+.sector1{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    /* border: 5px #eb3204 solid; */
+}
+.sector1 h1{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+.sector1:hover{
+
+}
+.sector2{
+    display: flex;
+    flex-direction:column;
+    width:fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin-top: none;
+    margin-left:auto;
+    margin-right: auto;
+    /* border: 5px #eb3204 solid; */
+    
+}
+.sector2 a{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sector2 h2{
+    text-align: center;
+    margin-left: 100px;
+}
+.sector3{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: fit-content;
+    padding: 20px;
+    margin-top: none;
+    margin-left:auto;
+    margin-right: auto;
+    /* border: 5px #eb3204 solid; */
+
+}
+.sector3 h3{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 100px;
+    padding: 20px;
+}
+.sector3 a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14;
+    padding: 10px;
+    margin-left: 30px;
+}
+.sector3 h3,a:hover{
+    text-decoration: underline;
+    font-size: larger;
+}
+.sector4{
+    
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: fit-content;
+    padding: 20px;
+    margin-top: none;
+    margin-left:auto;
+    margin-right: auto;
+    /* border: 5px #eb3204 solid; */
+}
+.sector4 h3{
+    text-align: center;
+    margin-left: 100px;
+    padding: 20px;
+}
+.sector4 a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14;
+    padding: 10px;
+    margin-left: 30px;
+}
+.sector4 a:hover{
+    text-decoration: underline;
+    font-size: larger;
+}
+.aboutme{
+    /* display: flex;
+    flex-direction:row; */
+    /* width:fit-content; */
+    height: fit-content;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right: auto;
+    /* border: 5px #eb3204 solid; */  
+}
+.aboutme img{
+    float: left;
+    margin-right: 20px;
+}
+.aboutme a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14;
+    padding: 10px;
+    margin-left: 30px;
+}
+.aboutme h2{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.button{
+    position: fixed;
+    right:2px;
+    bottom: 0px;
+    display:block;
+    background-color: #014d4e;
+    width: 100px;
+    height: 50px;
+    border: #eb3204 solid;
+}
+.button a{
+    color: #c2b280;
+    text-decoration: none;
+    align-items: center;
+}
+.button a:hover{
+    color: #eb3204;
+}
+h2{
+    text-align:right
+}

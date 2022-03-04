@@ -1,0 +1,202 @@
+<!-- HTML is the language we use to create web pages. 
+It is a mark-up language! This means it is used to describe the contents of the page.
+We could write out lots of content, loads of text, and the browser would display it as just plain old text, like a word document.
+HTML allows us to tell the browser what the content is, how it should be displayed, and what it should look like.
+
+HTML is made up of elements. -->
+
+<!-- Elements consist of the opening tag, the content, and a closing tag -->
+
+<tagname> The content goes here</tagname>
+
+<!-- And that whole thing is an element. It won't do anything - because there's no such tag! So let's look at a real opening -->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nam placeat! Est, corporis error tempora officia illum consequuntur ut molestiae, voluptatem, dicta nostrum itaque sequi ducimus. Esse, doloribus praesentium. Atque numquam esse magnam aperiam consectetur cupiditate nesciunt dicta voluptatem! Rem.</p>
+
+<!-- The <p> tag is for a paragraph. We open it, we put our paragraph in, and then we close it. Everything within those tags is part of the paragraph - and will be displayed as such.
+
+There are many tags - each with their own rules for formatting. One you might see a lot of are the heading tags: -->
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<!-- Can you see how we surround the content with the tags? If we didn't close the tags, we run the risk of them affecting our whole content! -->
+
+<h1>This is my heading
+    <p>And this is still a heading - because I never ended the tag!</p>
+
+    </h1>
+
+<!--That isn't to say we can't nest elements though - we can! But we need to be aware of what we're writing!
+    
+Sometimes, the tag needs a little bit more information to be able to do its job. This is where attributes come in to play!
+
+One of the most common tags you'll see with an attribute is <a> - the anchor tag.
+<a> is used for links - this is how we navigate through websites!
+We use the <a> to let the browser know the following content is a link, but to direct the browser, we need to use the attribute "href" - which means hypertext reference.
+
+<a href="http://www.google.com">And then the word/s you want to be the link go here</a>  - and then you close the link
+
+without that href, the browser wouldn't know where to go! -->
+<a href="http://www.google.com">Click here</a> to visit Google!
+
+<!-- Of course, there are exceptions to the rule. Some elements don't need closing tags!
+One example is the image tag. Because of the way browsers put images into webpages, the img elements doesn't need a closing tag
+
+So, logically, you might think we write an image element like this:
+<img> myimg.png</img> - BUT!
+
+You actually write an image like this:
+<img src="myimage.png">
+
+<img> is the tag, but it needs an attribute to work. This attribute is "src" which means source. We need to point to the source of the image so the browser can display it. We don't need to close the tag after, it's self closing. 
+
+It's slightly odd logic, and doesn't match other other examples  - but whereas the other tags we've seen so far annotate our content, the img tag doesn't. It embeds the img onto the page. It's like hanging a picture up on a wall. <img> is the frame, "src" is the picture, and we hang it up on the wall of our website.
+
+A super important tag is <div>
+
+<div> is a division tag - it's used to split your content up. On its own it does very little. 
+It starts to be helpful when we combine it with attributes, like "class" or "id" - but we'll look at that more in CSS!
+
+We put blocks of content inside <div> depending on how we want our content grouped together. For our project, we'll likely group things by styling. 
+So:
+<div>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contact.html">Contact</a>
+</div>
+<div>
+    This is all my content! I'm going to put writing welcoming people here!
+    <div>
+        Within the content bit, I want another block of content
+    </div>
+    And now this content is out of my other block of content, but within the first block of content!
+</div>
+
+Now we've made three 'boxes' on our page. There's a top box with my links in, there's a second box - and INSIDE that second box is the third box.
+Indentation doesn't really matter in HTML like it did in Python. It won't affect our code - but it is very useful. We can see from the indentation what is nested in what!
+
+After - with CSS - we can give these divs classes which can control their appearance and styling
+<div class="navbar"> (everything after this is in the div navbar)
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contact.html">Contact</a>
+</div>(now, navbar is finished)
+<div class="content">(everything in this is in the div content)
+    This is all my content! I'm going to put writing welcoming people here! This is a parent div.
+    <div class="subcontent">(Everything after this is in the div subcontent, but also STILL within the content div - we never ended it!)
+        Within the content bit, I want another block of content. This div is a child to the containing div it is in. It is affected by both the styling of content and subcontent, in some way.
+    </div> (now we have eneded the subcontent div, everything after this is still within the content, though)
+    And now this content is out of my other block of content, but within the first block of content!
+</div> (and now, the div content is closed)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Useful tags
+
+---------------------------------------------------------------------------------------------------------------------------
+
+<a href="url goes here">The text / img you want to link goes here</a>
+<br> A line break - you put this where you want a line break to go: -->
+Hello!<br>
+That is a line break!
+<!-- <b>Text within these tags will be BOLD</b>
+<i>Text within these tags will be italic</i>
+<ol> is for ordered list (A list that starts its items with 1,2,3 etc....)
+<ul> is for unordered list (A list with bullet points)
+<li> is used for list items
+
+so:
+
+<ol>
+    <li>My number one item</li>
+    <li>My number two item</li>
+    <li>My number three item</li>
+</ol>
+
+or
+
+<ul>
+    <li>A bullet pointed item</li>
+    <li>A bullet pointed item</li>
+    <li>A bullet pointed item</li>
+</ul>
+
+---------------------------------------------------------------------------------------------------------------------------
+
+HTML Page Template - The Standard!!!!
+
+---------------------------------------------------------------------------------------------------------------------------
+When you come to make your page, you need to follow a template to make your page standard. There are lots of web browsers, and they ALL need to know how to display your content - so there are strict rules for writing webpages!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+This is called the boilerplate - it is the structure all HTML pages should follow. In VSC, once we've made our page.html, we can type ! and hit enter, and this will appear. 
+It's essential that you use this structure. We've seen above that we CAN just write content and have it appear without this template. 
+
+To paraphrase Dr Ian Malcom, just because we could doesn't mean that we should! 
+Your website will not meet web standards unless it follows this template - so let's break it down a bit!
+
+<!DOCTYPE html> - this is a declaration at the start of the page - the type of document this is is HTML
+<html lang="en"> - this is the HTML tag - with the attribute lang. The HTML tags will contain EVERYTHING other than Doctype - you can see above that <html> starts the document, and </html>ends the document too. The language attribute is for screen readers / page translators. They know to pronounce these words using English patterns
+
+Within the <html> element we also have <head>
+<head> contains information for the browser - in this example within our <head> elemts, we also have <meta> and <title>
+    <meta> is information - we don't need to worry about this for our project
+    <title> is an element. What we put in here is what will show in the browser window as the page name! For example:
+        <title>My Website!</title>
+    And now, it will say "My Website" in the top of the browser tab
+There are lots of other things we can put in our <head> element - you can link your stylesheet or other external scripts in there!
+What DOESN'T go in the <head> element is any content. The head tag closes, and we make way for body!
+<body> contains all our content. We nest all of our content within that body element.
+
+If we get these things mixed up, our page will still look right - but it won't BE right.
+
+Try to follow this structure.
+HTML:
+    HEAD is in HTML
+        META is in HEAD, which is in HTML
+        TITLE is in HEAD, which is in HTML
+    HEAD stops
+    BODY is in HTML
+        DIV is in BODY, which is in HTML
+            A is in DIV, which is in BODY, which is in HTML.....etc
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <div class="navbar"> (everything after this is in the div navbar)
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contact.html">Contact</a>
+</div>(now, navbar is finished)
+
+<div class="content">(everything in this is in the div content)
+
+    This is all my content! I'm going to put writing welcoming people here! This is a parent div.
+
+    <div class="subcontent">(Everything after this is in the div subcontent, but also STILL within the content div - we never ended it!)
+        Within the content bit, I want another block of content. This div is a child to the containing div it is in. It is affected by both the styling of content and subcontent, in some way.
+    </div> (now we have eneded the subcontent div, everything after this is still within the content, though)
+
+    And now this content is out of my other block of content, but within the first block of content!
+</div>
+</body>
+</html>
